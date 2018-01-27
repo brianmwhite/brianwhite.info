@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<meta name='description' content='Example config.toml configuration for Minimo:
+baseURL = &#34;http://www.example.com&#34; title = &#34;Minimo&#34; # for smart copyright line, leave this blank and check [params.copyright] copyright = &#34;&#34; theme = &#34;minimo&#34; disqusShortname = &#34;&#34; googleAnalytics = &#34;&#34; Paginate = 5 preserveTaxonomyNames = true enableRobotsTXT = true # generate robots.txt # Syntax Highlighting ( https://gohugo.io/content-management/syntax-highlighting/ ) pygmentsCodefences = true # Missing translations will default to this content language defaultContentLanguage = &#34;en&#34; [params.info] description = &#34;Minimalist theme for Hugo&#34; title404 = &#34;Nothing&#39;s here!'>
+
+<meta property='og:title' content='Example config.toml • Munif Tanjim'>
+<meta property='og:description' content='Example config.toml configuration for Minimo:
+baseURL = &#34;http://www.example.com&#34; title = &#34;Minimo&#34; # for smart copyright line, leave this blank and check [params.copyright] copyright = &#34;&#34; theme = &#34;minimo&#34; disqusShortname = &#34;&#34; googleAnalytics = &#34;&#34; Paginate = 5 preserveTaxonomyNames = true enableRobotsTXT = true # generate robots.txt # Syntax Highlighting ( https://gohugo.io/content-management/syntax-highlighting/ ) pygmentsCodefences = true # Missing translations will default to this content language defaultContentLanguage = &#34;en&#34; [params.info] description = &#34;Minimalist theme for Hugo&#34; title404 = &#34;Nothing&#39;s here!'>
+<meta property='og:url' content='http://www.example.com/docs/example-config-toml/'>
+<meta property='og:site_name' content='Minimo'>
+<meta property='og:type' content='article'><meta property='og:image' content='https://www.gravatar.com/avatar/058944a54775b387da964cb3cc3670ff?s=256'><meta property='article:author' content='https://facebook.com/MunifTanjim'><meta property='article:section' content='Docs'><meta property='article:tag' content='config'><meta property='article:published_time' content='2017-09-25T08:00:00&#43;06:00'/><meta property='article:modified_time' content='2017-10-05T15:30:00&#43;06:00'/><meta name='twitter:card' content='summary'><meta name='twitter:creator' content='@MunifTanjim'>
+
+<meta name="generator" content="Hugo 0.34" />
+
+  <title>Example config.toml • Munif Tanjim</title>
+  <link rel='canonical' href='http://www.example.com/docs/example-config-toml/'>
+  
+  
+  <link rel='icon' href='/favicon.ico'>
+<link rel='stylesheet' href='/assets/css/main.f0e8df71.css'><link rel='stylesheet' href='/css/custom.css'>
+</head>
+
+
+<body class='page type-docs'>
+  <div class='site'>
+
+    <a class='screen-reader' href='#main'>Skip to Content</a>
+
+    <header id='header' class='header-container'>
+      <div class='header site-header'>
+        <nav id='main-menu' class='main-menu-container' aria-label='Main Menu'>
+  <ul class='main-menu'>
+  <li>
+      <a href='/'>Home</a>
+    </li>
+  <li>
+      <a href='/docs/'>Docs</a>
+    </li>
+  <li>
+      <a href='/typography/'>Typography</a>
+    </li>
+  <li>
+      <a href='/about/'>About</a>
+    </li>
+  <li>
+      <a href='https://github.com/MunifTanjim/minimo'>Repo</a>
+    </li>
+  
+  </ul>
+</nav>
+
+        <div class='header-info'>
+          
+          <p class='site-title title'>Minimo</p>
+          
+          <p class='site-description subtitle'>Minimalist theme for Hugo</p>
+        </div>
+      </div>
+    </header>
+
+
+<main id='main' class='main'>
+  <article lang='en' class='entry'>
+    <header class='header-container'>
+  <div class='header entry-header'>
+    <div class='header-info'>
+      <h1 class='title'>Example config.toml</h1>
+      
+
+    </div>
+    
+<div class='meta'>
+  <span class='posted-on'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+  <line x1="16" y1="2" x2="16" y2="6"/>
+  <line x1="8" y1="2" x2="8" y2="6"/>
+  <line x1="3" y1="10" x2="21" y2="10"/>
+  
+</svg>
+<span class='screen-reader'>Posted on </span>
+  <time class='date' datetime='2017-09-25T08:00:00&#43;06:00'>2017, Sep 25</time>
+</span>
+
+  <span class='byline'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M21,21V20c0-2.76-4-5-9-5s-9,2.24-9,5v1"/>
+  <path d="M16,6.37A4,4,0,1,1,12.63,3,4,4,0,0,1,16,6.37Z"/>
+  
+</svg>
+<span class='screen-reader'> by </span><a href='/authors/muniftanjim'>Munif Tanjim</a></span>
+  
+<span class='reading-time'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <circle cx="12" cy="12" r="10"/>
+  <polyline points="12 6 12 12 15 15"/>
+  
+</svg>
+2 mins read
+</span>
+
+
+</div>
+
+
+  </div>
+</header>
+
+    
+    
+
+    <div class='entry-content'>
+  <p>Example <code>config.toml</code> configuration for Minimo:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml"><span style="color:#a6e22e">baseURL</span> = <span style="color:#e6db74">&#34;http://www.example.com&#34;</span>
+<span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#34;Minimo&#34;</span>
+<span style="color:#75715e"># for smart copyright line, leave this blank and check [params.copyright]</span>
+<span style="color:#a6e22e">copyright</span> = <span style="color:#e6db74">&#34;&#34;</span>
+
+<span style="color:#a6e22e">theme</span> = <span style="color:#e6db74">&#34;minimo&#34;</span>
+
+<span style="color:#a6e22e">disqusShortname</span> = <span style="color:#e6db74">&#34;&#34;</span>
+<span style="color:#a6e22e">googleAnalytics</span> = <span style="color:#e6db74">&#34;&#34;</span>
+
+<span style="color:#a6e22e">Paginate</span> = <span style="color:#ae81ff">5</span>
+<span style="color:#a6e22e">preserveTaxonomyNames</span> = <span style="color:#66d9ef">true</span>
+
+<span style="color:#a6e22e">enableRobotsTXT</span> = <span style="color:#66d9ef">true</span> <span style="color:#75715e"># generate robots.txt</span>
+
+<span style="color:#75715e"># Syntax Highlighting ( https://gohugo.io/content-management/syntax-highlighting/ )</span>
+<span style="color:#a6e22e">pygmentsCodefences</span> = <span style="color:#66d9ef">true</span>
+
+<span style="color:#75715e"># Missing translations will default to this content language</span>
+<span style="color:#a6e22e">defaultContentLanguage</span> = <span style="color:#e6db74">&#34;en&#34;</span>
+
+[<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">info</span>]
+<span style="color:#a6e22e">description</span> = <span style="color:#e6db74">&#34;Minimalist theme for Hugo&#34;</span>
+<span style="color:#a6e22e">title404</span> = <span style="color:#e6db74">&#34;Nothing&#39;s here!&#34;</span>
+
+[<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">assets</span>]
+<span style="color:#a6e22e">favicon</span> = <span style="color:#e6db74">&#34;favicon.ico&#34;</span>
+<span style="color:#a6e22e">customCSS</span> = [<span style="color:#e6db74">&#34;css/custom.css&#34;</span>]
+<span style="color:#a6e22e">customJS</span> = [<span style="color:#e6db74">&#34;js/custom.js&#34;</span>]
+<span style="color:#a6e22e">gopher</span> = <span style="color:#e6db74">&#34;&#34;</span> <span style="color:#75715e"># used in 404 template ( Generator: https://gopherize.me )</span>
+
+[<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">copyright</span>]
+<span style="color:#a6e22e">prefix</span> = <span style="color:#e6db74">&#34;&#34;</span>
+<span style="color:#a6e22e">holder</span> = <span style="color:#e6db74">&#34;MunifTanjim&#34;</span>
+<span style="color:#a6e22e">startYear</span> = <span style="color:#e6db74">&#34;2017&#34;</span>
+<span style="color:#a6e22e">suffix</span> = <span style="color:#e6db74">&#34;&#34;</span>
+
+[<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">settings</span>]
+<span style="color:#75715e"># date &amp; time format: https://golang.org/pkg/time/</span>
+<span style="color:#a6e22e">dateFormat</span> = <span style="color:#e6db74">&#34;2006, Jan 02&#34;</span>
+<span style="color:#a6e22e">listDateFormat</span> = <span style="color:#e6db74">&#34;2006, Jan 02&#34;</span>
+<span style="color:#a6e22e">hideEntryNavigation</span> = [<span style="color:#e6db74">&#34;page&#34;</span>] <span style="color:#75715e"># boolean / array of sections</span>
+<span style="color:#a6e22e">recentPostsLength</span> = <span style="color:#ae81ff">4</span>
+<span style="color:#a6e22e">hideSocialMenu</span> = <span style="color:#66d9ef">false</span>
+<span style="color:#a6e22e">showReadingTime</span> = <span style="color:#66d9ef">true</span>
+<span style="color:#a6e22e">noTermCloudShuffle</span> = <span style="color:#66d9ef">false</span>
+<span style="color:#a6e22e">homepageSections</span> = [<span style="color:#e6db74">&#34;recent_posts&#34;</span>]
+
+[<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">opengraph</span>.<span style="color:#a6e22e">facebook</span>]
+<span style="color:#a6e22e">admins</span> = [] <span style="color:#75715e"># array of Facebook IDs</span>
+<span style="color:#a6e22e">appID</span> = <span style="color:#e6db74">&#34;&#34;</span>
+<span style="color:#a6e22e">pageID</span> = <span style="color:#e6db74">&#34;&#34;</span>
+
+[<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">opengraph</span>.<span style="color:#a6e22e">twitter</span>]
+<span style="color:#a6e22e">page</span> = <span style="color:#e6db74">&#34;&#34;</span> <span style="color:#75715e"># Twitter page username</span>
+
+[<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">seo</span>]
+<span style="color:#75715e"># Title Separator: - – — · • * ⋆ | ~ « » &lt; &gt;</span>
+<span style="color:#a6e22e">titleSeparator</span> = <span style="color:#e6db74">&#34;•&#34;</span>
+
+[<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">social</span>]
+<span style="color:#a6e22e">codepen</span> = <span style="color:#e6db74">&#34;MunifTanjim&#34;</span>
+<span style="color:#a6e22e">email</span> = <span style="color:#e6db74">&#34;contact@example.com&#34;</span>
+<span style="color:#a6e22e">facebook</span> = <span style="color:#e6db74">&#34;MunifTanjim&#34;</span>
+<span style="color:#a6e22e">github</span> = <span style="color:#e6db74">&#34;MunifTanjim&#34;</span>
+<span style="color:#a6e22e">instagram</span> = <span style="color:#e6db74">&#34;MunifTanjim&#34;</span>
+<span style="color:#a6e22e">linkedin</span> = <span style="color:#e6db74">&#34;muniftanjim&#34;</span>
+<span style="color:#a6e22e">twitter</span> = <span style="color:#e6db74">&#34;MunifTanjim&#34;</span>
+<span style="color:#a6e22e">telegram</span> = <span style="color:#e6db74">&#34;MunifTanjim&#34;</span>
+<span style="color:#a6e22e">google_scholar</span> = <span style="color:#e6db74">&#34;qc6CJjYAAAAJ&#34;</span>
+
+[<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">social</span>.<span style="color:#a6e22e">config</span>]
+<span style="color:#a6e22e">platforms</span> = [<span style="color:#e6db74">&#34;github&#34;</span>,<span style="color:#e6db74">&#34;facebook&#34;</span>,<span style="color:#e6db74">&#34;twitter&#34;</span>,<span style="color:#e6db74">&#34;instagram&#34;</span>,<span style="color:#e6db74">&#34;email&#34;</span>,<span style="color:#e6db74">&#34;codepen&#34;</span>,<span style="color:#e6db74">&#34;linkedin&#34;</span>,<span style="color:#e6db74">&#34;telegram&#34;</span>,<span style="color:#e6db74">&#34;google_scholar&#34;</span>]
+
+[<span style="color:#a6e22e">taxonomies</span>]
+<span style="color:#a6e22e">author</span> = <span style="color:#e6db74">&#34;authors&#34;</span>
+<span style="color:#a6e22e">category</span> = <span style="color:#e6db74">&#34;categories&#34;</span>
+<span style="color:#a6e22e">tag</span> = <span style="color:#e6db74">&#34;tags&#34;</span>
+
+[<span style="color:#a6e22e">permalinks</span>]
+<span style="color:#a6e22e">page</span> = <span style="color:#e6db74">&#34;/:slug/&#34;</span>
+
+[[<span style="color:#a6e22e">menu</span>.<span style="color:#a6e22e">main</span>]]
+<span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#34;Repo&#34;</span>
+<span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">-10</span>
+<span style="color:#a6e22e">identifier</span> = <span style="color:#e6db74">&#34;repository&#34;</span>
+<span style="color:#a6e22e">url</span> = <span style="color:#e6db74">&#34;https://github.com/MunifTanjim/minimo&#34;</span>
+
+[<span style="color:#a6e22e">blackfriday</span>]
+<span style="color:#a6e22e">hrefTargetBlank</span> = <span style="color:#66d9ef">true</span>
+
+[<span style="color:#a6e22e">languages</span>]
+<span style="color:#75715e"># edit this block for your own language</span>
+[<span style="color:#a6e22e">languages</span>.<span style="color:#a6e22e">en</span>]
+<span style="color:#a6e22e">lang</span> = <span style="color:#e6db74">&#34;en&#34;</span>
+<span style="color:#a6e22e">languageName</span> = <span style="color:#e6db74">&#34;English&#34;</span>
+<span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">1</span></code></pre></div>
+
+</div>
+
+    
+<footer class='entry-footer-container'>
+  <div class='entry-footer'>
+  <div class='categories'>
+  <span class='taxonomyTerm-icon'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M22,19a2,2,0,0,1-2,2H4a2,2,0,0,1-2-2V5A2,2,0,0,1,4,3H9l2,3h9a2,2,0,0,1,2,2Z"/>
+  
+</svg>
+</span>
+  <span class='screen-reader'>Categories: </span><a class='category' href='/categories/others'>Others</a></div>
+<div class='tags'>
+  <span class='taxonomyTerm-icon'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M20.59,13.41l-7.17,7.17a2,2,0,0,1-2.83,0L2,12V2H12l8.59,8.59A2,2,0,0,1,20.59,13.41Z"/>
+  <line x1="7" y1="7" x2="7" y2="7"/>
+  
+</svg>
+</span>
+  <span class='screen-reader'>Tags: </span><a class='tag' href='/tags/config'>Configuration</a></div>
+
+  </div>
+</footer>
+
+
+  </article>
+  
+<nav class='entry-nav-container'>
+  <div class='entry-nav'><div class='prev-entry'>
+      <a href='/docs/updating/'>
+        <span aria-hidden='true'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="20" y1="12" x2="4" y2="12"/>
+  <polyline points="10 18 4 12 10 6"/>
+  
+</svg>
+ Previous</span>
+        <span class='screen-reader'>Previous post: </span>Updating Guide</a>
+    </div><div class='next-entry'>
+      <a href='/docs/authors/'>
+        <span class='screen-reader'>Next post: </span>Authors Setup Guide<span aria-hidden='true'>Next <svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="4" y1="12" x2="20" y2="12"/>
+  <polyline points="14 6 20 12 14 18"/>
+  
+</svg>
+</span>
+      </a>
+    </div></div>
+</nav>
+
+  
+</main>
+
+    <footer id='footer' class='footer-container'>
+      <div class='footer'>
+        <div class='social-menu-container'>
+  <nav aria-label='Social Menu'>
+    <ul class='social-menu'><li>
+        <a href='https://github.com/MunifTanjim' target='_blank' rel='noopener'>
+          <span class='screen-reader'>Open Github account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+  
+</svg>
+</a>
+      </li><li>
+        <a href='https://facebook.com/MunifTanjim' target='_blank' rel='noopener'>
+          <span class='screen-reader'>Open Facebook account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+  
+</svg>
+</a>
+      </li><li>
+        <a href='https://twitter.com/MunifTanjim' target='_blank' rel='noopener'>
+          <span class='screen-reader'>Open Twitter account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+  
+</svg>
+</a>
+      </li><li>
+        <a href='https://instagram.com/MunifTanjim' target='_blank' rel='noopener'>
+          <span class='screen-reader'>Open Instagram account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+  <line x1="17.5" y1="6.5" x2="17.5" y2="6.5"/>
+  
+</svg>
+</a>
+      </li><li>
+        <a href='mailto:contact@example.com' target='_blank' rel='noopener'>
+          <span class='screen-reader'>Contact via Email</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+  <polyline points="22,6 12,13 2,6"/>
+  
+</svg>
+</a>
+      </li><li>
+        <a href='https://codepen.io/MunifTanjim' target='_blank' rel='noopener'>
+          <span class='screen-reader'>Open Codepen account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"/>
+  <line x1="12" y1="22" x2="12" y2="15.5"/>
+  <polyline points="22 8.5 12 15.5 2 8.5"/>
+  <polyline points="2 15.5 12 8.5 22 15.5"/>
+  <line x1="12" y1="2" x2="12" y2="8.5"/>
+  
+</svg>
+</a>
+      </li><li>
+        <a href='https://linkedin.com/in/muniftanjim' target='_blank' rel='noopener'>
+          <span class='screen-reader'>Open Linkedin account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path stroke-width="1.8" d="m5.839218,4.101561c0,1.211972 -0.974141,2.194011 -2.176459,2.194011s-2.176459,-0.982039 -2.176459,-2.194011c0,-1.211094 0.974141,-2.194011 2.176459,-2.194011s2.176459,0.982917 2.176459,2.194011zm0.017552,3.94922l-4.388022,0l0,14.04167l4.388022,0l0,-14.04167zm7.005038,0l-4.359939,0l0,14.04167l4.360816,0l0,-7.370999c0,-4.098413 5.291077,-4.433657 5.291077,0l0,7.370999l4.377491,0l0,-8.89101c0,-6.915523 -7.829986,-6.66365 -9.669445,-3.259423l0,-1.891237z"/>
+  
+</svg>
+</a>
+      </li><li>
+        <a href='https://t.me/MunifTanjim' target='_blank' rel='noopener'>
+          <span class='screen-reader'>Open Telegram account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="m 22.05,1.577 c -0.393,-0.016 -0.784,0.08 -1.117,0.235 -0.484,0.186 -4.92,1.902 -9.41,3.64 C 9.263,6.325 7.005,7.198 5.267,7.867 3.53,8.537 2.222,9.035 2.153,9.059 c -0.46,0.16 -1.082,0.362 -1.61,0.984 -0.79581202,1.058365 0.21077405,1.964825 1.004,2.499 1.76,0.564 3.58,1.102 5.087,1.608 0.556,1.96 1.09,3.927 1.618,5.89 0.174,0.394 0.553,0.54 0.944,0.544 l -0.002,0.02 c 0,0 0.307,0.03 0.606,-0.042 0.3,-0.07 0.677,-0.244 1.02,-0.565 0.377,-0.354 1.4,-1.36 1.98,-1.928 l 4.37,3.226 0.035,0.02 c 0,0 0.484,0.34 1.192,0.388 0.354,0.024 0.82,-0.044 1.22,-0.337 0.403,-0.294 0.67,-0.767 0.795,-1.307 0.374,-1.63 2.853,-13.427 3.276,-15.38 L 23.676,4.725 C 23.972,3.625 23.863,2.617 23.18,2.02 22.838,1.723 22.444,1.593 22.05,1.576 Z"/>
+  
+</svg>
+</a>
+      </li><li>
+        <a href='https://scholar.google.com/citations?user=qc6CJjYAAAAJ' target='_blank' rel='noopener'>
+          <span class='screen-reader'>Open Google_scholar account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="m 21.328275,2.0024135 0,9.2003395 M 8.6946469,7.8499245 C 8.7093132,7.0626829 8.5847937,5.6137351 8.974154,4.9606655 9.5975597,3.9150339 9.8307613,3.5706847 10.771796,2.9710948 c 1.952751,-0.9885544 4.296697,0.6921318 4.296697,0.6921318 0.802938,0.5633891 1.671609,2.1003572 1.671609,2.1003572 L 18.10751,3.9389634 12.664268,2.1848034 9.1486088,3.5252042 6.0803816,7.6807366 m 9.1084104,3.4210684 c 0,0 0.649411,-0.633314 1.16841,-1.085735 0.461179,-0.4020173 0.516019,-0.7138532 0.600027,-0.9143396 0.179361,-0.4260207 0.26781,-0.9086204 0.26781,-1.4456774 0,-0.700605 -0.131107,-1.273996 -0.388464,-1.735025 -0.03055,-0.05304 0,0 -0.09651,-0.157448 l 4.58821,-3.7611665 -11.008856,0 -6.6476714,5.847511 5.0228993,-0.023624 c 0.2297796,1.2364085 0.619154,1.5748978 1.0191038,2.2220455 0.7438823,0.718552 1.1307993,1.193512 2.2155363,1.193512 0.253393,0 2.600615,-0.05638 2.841896,-0.08994 0,0 0.546169,1.198902 -0.133007,1.710039 -0.410959,0.30928 0.575624,1.304408 0.575624,1.304408 0,0 -5.576506,0.830968 -6.5223057,1.426284 -0.5420277,0.3385 -0.9779337,0.765847 -1.3068337,1.277621 -0.328918,0.515574 -0.492962,1.068544 -0.492962,1.664655 0,0.502491 0.10615,0.955033 0.32009,1.357362 0.21394,0.402417 0.492962,0.732871 0.839589,0.988803 0.345779,0.258672 0.7447117,0.473936 1.1950694,0.649418 0.4495537,0.174157 0.895903,0.297836 1.341351,0.367764 0.444036,0.06984 0.885521,0.104139 1.323077,0.104139 0.693237,0 1.387285,-0.09035 2.086939,-0.270163 0.698021,-0.181495 1.352643,-0.450067 1.964661,-0.806867 0.610393,-0.354503 1.107389,-0.837897 1.488596,-1.443645 0.380376,-0.6084 0.571028,-1.291942 0.571028,-2.048772 0,-0.573746 -0.11578,-1.095773 -0.34743,-1.569799 -0.229999,-0.47252 -0.511492,-0.8615 -0.84681,-1.163755 -0.334594,-0.302696 -2.189683,-1.837453 -2.189683,-1.837453"/>
+  
+</svg>
+</a>
+      </li></ul>
+  </nav>
+</div>
+        <div class='copyright'>
+  <p>
+        
+          
+        
+      
+
+       &copy; 2017-2018 MunifTanjim 
+  </p>
+</div>
+
+      </div>
+    </footer>
+
+  </div><script src='/assets/js/main.5871befd.js'></script><script src='/js/custom.js'></script></body>
+
+</html>
+

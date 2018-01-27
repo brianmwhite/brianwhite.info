@@ -1,4 +1,4 @@
-baseURL = "http://brianwhite.info"
+baseURL = "/"
 title = "brian white"
 # for smart copyright line, leave this blank and check [params.copyright]
 copyright = ""
@@ -20,8 +20,8 @@ pygmentsCodefences = true
 defaultContentLanguage = "en"
 
 [params.info]
-description = "Minimalist theme for Hugo"
-title404 = "Nothing's here!"
+description = "software development, books, technology, and pottery"
+title404 = "this is not the page you are looking for..."
 
 [params.assets]
 favicon = "favicon.ico"
@@ -59,9 +59,15 @@ page = "" # Twitter page username
 titleSeparator = "•"
 
 [params.social]
+codepen = ""
+email = ""
+facebook = ""
 github = "brianmwhite"
+instagram = ""
 linkedin = "bwhite1"
 twitter = "bmwzero"
+telegram = ""
+google_scholar = ""
 
 [params.social.config]
 platforms = ["github","twitter","linkedin"]
@@ -74,11 +80,11 @@ tag = "tags"
 [permalinks]
 page = "/:slug/"
 
-[[menu.main]]
-name = "Repo"
-weight = -10
-identifier = "repository"
-url = "https://github.com/MunifTanjim/minimo"
+# [[menu.main]]
+# name = "Repo"
+# weight = -10
+# identifier = "repository"
+# url = "https://github.com/MunifTanjim/minimo"
 
 [blackfriday]
 hrefTargetBlank = true
