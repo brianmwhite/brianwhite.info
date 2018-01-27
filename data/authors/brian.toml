@@ -1,0 +1,11 @@
+id = "brian"
+
+[email]
+username = "brian"
+host = "thirdember.com"
+
+[name]
+display = "Brian White"
+
+[social]
+twitter = "bmwzero"
