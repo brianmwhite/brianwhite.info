@@ -20,7 +20,7 @@ pygmentsCodefences = true
 defaultContentLanguage = "en"
 
 [params.info]
-description = "software development, books, technology, and pottery"
+description = "thoughts on technology, books, and pottery"
 title404 = "this is not the page you are looking for..."
 
 [params.assets]
